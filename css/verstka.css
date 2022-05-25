@@ -433,40 +433,20 @@ h6 {
     background-color: #005bc1;
 }
 .news__boxes {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 -30px;
 }
-.news__box-mac,
-.news__box-milos,
-.news__box-prolight,
-.news__box-robe {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    padding: 0 30px;
-    position: relative;
-}
-.news__box-prolight,
-.news__box-robe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-.news__box-milos {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+.main__inner:before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 40%;
+    height: calc(100% - 80px);
+    background: rgba(0, 91, 193, 0.6);
 }
 .news__box-mac {
     padding: 0 0 0 30px;
@@ -527,31 +507,4 @@ h6 {
 }
 .news__prolight-title {
     margin-bottom: 20px;
-}
-.news__prolight-date {
-    position: absolute;
-    bottom: 0;
-    right: 30px;
-}
-.news__prolight-text {
-    margin-bottom: 27px;
-}
-.news__robe-title {
-    margin-bottom: 15px;
-}
-.news__robe-date {
-    position: absolute;
-    bottom: 0;
-    right: 30px;
-}
-.news__robe-text {
-    margin-bottom: 20px;
-}
-.news__box-image {
-    width: 128px;
-    height: 115px;
-}
-.news__box-img {
-    width: 100%;
-    height: auto;
 }
